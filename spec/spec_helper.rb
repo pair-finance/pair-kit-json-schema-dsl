@@ -17,8 +17,10 @@ FIXTURES_PATH = Pathname.new(File.dirname(__FILE__)).join('fixtures')
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].sort.each { |f| require f }
 
+require 'psych'
 require 'pair_kit/json_schema/dsl'
 
 require 'pry-byebug'
 require 'pry-alias'
+
 

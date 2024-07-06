@@ -4,7 +4,7 @@ RSpec.shared_examples "a valid DSL" do |name|
   ruby_path = base_path.sub_ext('.rb')
 
   context "for #{name}" do
-    let(:reference) { YAML.load_file(yaml_path) }
+    let(:reference) { Psych.load_file(yaml_path) }
 
     subject { builder.build { eval(File.read(ruby_path))} }
 

@@ -24,8 +24,8 @@ Gem::Specification.new do |spec|
 
   spec.extra_rdoc_files = ['README.md']
 
-  spec.add_dependency 'pair-kit-dsl-factory', '>= 0.0.1'
-  spec.add_dependency 'pair-kit-miniflector', '>= 0.0.1'
+  spec.add_dependency 'pair-kit-dsl-factory',  '~> 0.0', '>= 0.0.1'
+  spec.add_dependency 'pair-kit-miniflector',  '~> 0.0', '>= 0.0.1'
 
   spec.add_development_dependency 'pry-byebug', '~> 3.10', '>= 3.10.1'
   spec.add_development_dependency 'pry-alias', '~> 0.0', '>= 0.0.1'
@@ -40,6 +40,4 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'simplecov', '~> 0.19'
   spec.add_development_dependency 'simplecov-cobertura', '~> 2.1'
-
-  spec.add_development_dependency 'yaml'
 end
